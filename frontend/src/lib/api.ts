@@ -1,5 +1,6 @@
-const RAW_BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? "";
-export const API_BASE = RAW_BASE || "http://localhost:8000";
+// Empty string = same-origin (nginx proxies /api → backend in Docker).
+// Set VITE_API_BASE=http://localhost:8000 in .env.development for local dev.
+export const API_BASE = (import.meta.env.VITE_API_BASE as string | undefined) ?? "";
 
 const TOKEN_KEY = "vegalab_token";
 
