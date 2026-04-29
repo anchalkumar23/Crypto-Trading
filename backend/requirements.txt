@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pydantic
+email-validator
+pydantic-settings
+SQLAlchemy
+aiosqlite
+greenlet
+httpx
+python-jose[cryptography]
+passlib[bcrypt]
+bcrypt<4.0
+cryptography
+APScheduler
+python-multipart
+websockets
